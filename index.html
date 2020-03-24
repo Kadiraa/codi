@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  var element= document.createElement('span');
+  element.id="hi";
+  element.innerHTML="<ul><li>Cricket</li></ul>";
+  element.addEventListener('click',function(){
+    $(this).fadeOut(1000);
+  });
+  document.getElementById("parent").append(element);
+
+  var element= document.createElement('span');
+  element.innerHTML="<div>What is your passion</div>";
+  document.getElementById("parent").append(element);
+  
+  var element= document.createElement('span');
+  element.addEventListener('click',function(){
+    document.getElementById("parent").append(element);
+  });
+  element.innerHTML="<ul><li>Hockey</li></ul>";
+  document.getElementById("hi").append(element);
+  
+});
+
+</script>
+</head>
+<body>
+
+<span id="parent">hello, Tell me your hobbies</span>
+
+</body>
+</html>
