@@ -1,0 +1,56 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="js/styles.css">
+  
+</head>
+
+<body>
+      <h3 id="res">Click on Arrow button to see next screen</h3>
+  <div class="fabs">
+  <div class="chat">
+    <div class="chat_header">
+      <div class="chat_option">
+      <div class="header_img">
+        <img src="https://miro.medium.com/max/600/1*t3PcRikIrq42teXReodcRQ.png"/>
+        </div>
+        <span id="chat_head">ललिता</span> <br> <span class="agent">Agent</span> <span class="online">(Online)</span>
+       <!-- <span id="chat_fullscreen_loader" class="chat_fullscreen_loader"><i class="fullscreen zmdi zmdi-window-maximize"></i></span> -->
+
+      </div>
+
+    </div>
+    <div id="chat_converse" class="chat_conversion chat_converse">
+          
+      <span class="chat_msg_item chat_msg_item_admin">
+            <div class="chat_avatar">
+               <img src="https://miro.medium.com/max/600/1*t3PcRikIrq42teXReodcRQ.png"/>
+            </div>
+            क्या आप कोरोनावायरस के कारण चिंतित हैं?
+
+            <ul id="list" class="tags">
+            <li id="yes">हाँ </li>
+            <li id="no">नहीं </li>
+            </ul>
+        </span>
+        <span id="spanner"></span>
+
+    </div> 
+<div class="fab_field">
+      <!-- <a id="fab_camera" class="fab"><i class="zmdi zmdi-camera"></i></a> -->
+      <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
+      <textarea id="chatSend" name="chat_message" placeholder="Send a message" class="chat_field chat_message"></textarea>
+    </div>
+  </div>
+    <a id="prime" class="fab"><i class="prime zmdi zmdi-comment-outline"></i></a>
+</div>
+  
+
+<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+
+<script src="js/index.js"></script>
+
+
+</body>
