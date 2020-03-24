@@ -84,7 +84,7 @@ function nosfunction(){
             $('ul').fadeOut("slow");
             var btn = document.createElement("span");
             btn.className="chat_msg_item chat_msg_item_user";
-            btn.innerHTML="<ul class='tagsuser'><li>हाँ</li></ul>";
+            btn.innerHTML="<ul class='tagsuser'><li>नहीं</li></ul>";
             document.getElementById('spanner').appendChild(btn);
 
             var s ='<ul > ';
@@ -99,13 +99,14 @@ function nosfunction(){
             btn3.className="chat_msg_item chat_msg_item_admin";
             btn3.innerHTML = '<div class="chat_avatar"><img src="https://miro.medium.com/max/600/1*t3PcRikIrq42teXReodcRQ.png"/></div> '+'<div>'+data.message+'</div>'+'<div>'+s+'</div>';
             document.getElementById('spanner').appendChild(btn3);
-            });
             
-      //     var temp = document.createElement('ul');
-      //     temp.className="tags";
-      //     temp.innerHTML='<li>'+"Back to Main Menu"+'</li>';
-      //     temp.addEventListener('click',function(){showMenu();})  ;
-      //     document.getElementById('spanner3').appendChild(temp);
+            
+          var temp = document.createElement('ul');
+          temp.className="tags";
+          temp.innerHTML='<li>'+"Back to Main Menu"+'</li>';
+          temp.addEventListener('click',function(){showMenu();})  ;
+          document.getElementById('spanner').appendChild(temp);
+      });
             
 }
 
